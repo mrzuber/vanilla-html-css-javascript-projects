@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todo List App</title>
+  <link rel="stylesheet" href="todoStyle.css">
+</head>
+<body>
+  <div class="container">
+    <div class="todo-app">
+      <h2>To-Do List Application <img src="images/notes.png" alt=""></h2>
+      <div class="row">
+        <!-- Input box to add tasks -->
+        <input type="text" id="input-box" placeholder="Add your task">
+        
+        <!-- Dropdown to select task priority -->
+        <select id="priority-selector">
+          <option value="low">Low</option>
+          <option value="medium">Medium</option>
+          <option value="high">High</option>
+        </select>
+        
+        <!-- Buttons to add tasks or clear all -->
+        <button onclick="addTask()">Add</button>
+        <button onclick="clearAll()">Clear All</button>
+      </div>
+      
+      <!-- Task list -->
+      <ul id="list-container">
+
+        <!-- <li class="low"><p>Task 1</p><span>×</span></li>
+        <li class="medium checked"><p>Task 2</p><span>×</span></li> -->
+        
+      </ul>
+    </div>
+  </div>
+  <script src="todoScript.js"></script>
+</body>
+</html>
+
