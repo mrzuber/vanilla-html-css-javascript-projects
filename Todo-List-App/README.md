@@ -35,9 +35,12 @@ The To-Do List Application is a lightweight, interactive, and user-friendly tool
 
 ---
 
-## 🚀 Live Demo
-🎥 **Watch Demo Video:** [Click Here](your-video-file.mp4)  
-🌍 **Live Application:** [mrzubiar-todolistapp-netlify](https://mrzubiar-todolistapp.netlify.app)
+
+## 🚀 Live Demo  
+🎥 **Watch Demo Video:** [![Watch on YouTube](https://img.youtube.com/vi/JaeYYkfYMnw/0.jpg)](https://www.youtube.com/watch?v=JaeYYkfYMnw)  
+🌍 **Live Application:** [mrzubair-todo-list-app](https://mrzubairdotin-todo-list-app.netlify.app)
+
+
 
 ---
 
