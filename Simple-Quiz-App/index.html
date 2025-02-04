@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Simple Quiz App</title>
+</head>
+<body>
+    <!-- Main Quiz App Container -->
+    <div class="app">
+        
+        <!-- Row containing Quiz Title and Timer -->
+        <div class="row">
+            <h1>Simple Quiz</h1>
+            <div class="colum">
+                <!-- Timer Section -->
+                <p id="timer">Time Left: <span id="time-left">15</span> sec</p>
+                <!-- Progress Indicator -->
+                <h1 id="progress">5 / 0</h1>
+            </div>
+        </div>
+
+        <!-- Quiz Question and Answer Section -->
+        <div class="quiz">
+            <h2 id="question">Question goes here</h2>
+            <div id="answer-buttons">
+                <!-- <button class="btn">Answer 1</button>
+                <button class="btn">Answer 2</button>
+                <button class="btn">Answer 3</button>
+                <button class="btn">Answer 4</button> -->
+            </div>
+        </div>
+
+        <!-- Next Button (Initially Hidden) -->
+        <button id="next-btn">Next</button>
+    </div>
+</body>
+<!-- JavaScript File for Quiz Logic -->
+<script src="script.js"></script>
+</html>
