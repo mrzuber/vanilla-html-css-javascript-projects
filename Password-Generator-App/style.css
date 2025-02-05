@@ -1,0 +1,137 @@
+/* Reset default styles and set global properties */
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+
+/* Full-screen background with gradient */
+body {
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  color: #333;
+}
+
+/* Main Password Generator App Container */
+.app {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 500px;
+  text-align: left;
+  backdrop-filter: blur(10px);
+}
+
+/* App Title Styling */
+h1 {
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #333;
+}
+
+/* Password Display Section */
+.password-display {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 0.5rem;
+}
+
+/* Password Input Field */
+#password {
+  width: 70%;
+  padding: 0.5rem;
+  border: none;
+  font-size: 1rem;
+  outline: none;
+  background: transparent;
+}
+
+/* Copy Button Styling */
+#copy-btn {
+  padding: 0.5rem 1rem;
+  background: #6a11cb;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s ease;
+}
+
+/* Hover effect for Copy Button */
+#copy-btn:hover {
+  background: #2575fc;
+}
+
+/* Settings Section */
+.settings {
+  text-align: left;
+  margin-bottom: 1.5rem;
+}
+
+/* Individual Setting Row */
+.setting {
+  margin: 0.75rem 0;
+}
+
+/* Label Styling for Settings */
+.setting label {
+  display: flex;
+  align-items: center;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* Checkbox Styling */
+.setting input[type="checkbox"] {
+  margin-right: 0.5rem;
+}
+
+/* Input Field for Password Length */
+.setting input[type="number"] {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+  outline: none;
+}
+
+/* Generate Password Button Styling */
+#generate-btn {
+  padding: 0.75rem 1.5rem;
+  background: #6a11cb;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: background 0.3s ease;
+  width: 100%;
+}
+
+/* Hover effect for Generate Password Button */
+#generate-btn:hover {
+  background: #2575fc;
+}
+
+/* Responsive Styles for Small Screens */
+@media (max-width: 480px) {
+  .app {
+      padding: 1.5rem;
+  }
+}
