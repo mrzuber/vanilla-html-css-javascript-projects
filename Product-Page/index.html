@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Basic Page Setup -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <!-- Link to External CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Main Container for the Product Page -->
+    <div class="container">
+        <div class="product">
+
+            <!-- Product Image Gallery Section -->
+            <div class="gallery">
+                <!-- Main Product Image -->
+                <img src="images/image1.png" alt="Product Image" id="productImg">
+                
+                <!-- Image Control Buttons -->
+                <div class="controls">
+                    <span class="btn active"></span>
+                    <span class="btn"></span>
+                    <span class="btn"></span>
+                </div>
+            </div>
+
+            <!-- Product Details Section -->
+            <div class="details">
+                <!-- Product Title and Price -->
+                <h1>Casual T Shirt</h1>
+                <h2>$15.00</h2>
+                <h3>30% OFF</h3>
+
+                <!-- Product Description -->
+                <p>Wrangler is an American manufacturer of jeans and other clothing items, particularly workwear.</p>
+
+                <!-- Product Selection Form -->
+                <form>
+
+                    <!-- Size Selection -->
+                    <div class="size-select">
+                        <p>Size</p>
+                        <label for="small">
+                            <input type="radio" name="size" id="small">
+                            <span>S</span>
+                        </label>
+                        <label for="medium">
+                            <input type="radio" name="size" id="medium">
+                            <span>M</span>
+                        </label>
+                        <label for="large">
+                            <input type="radio" name="size" id="large">
+                            <span>L</span>
+                        </label>
+                        <label for="x-large">
+                            <input type="radio" name="size" id="x-large">
+                            <span>XL</span>
+                        </label>
+                        <label for="xx-large">
+                            <input type="radio" name="size" id="xx-large">
+                            <span>XXL</span>
+                        </label>
+                    </div>
+
+                    <!-- Color Selection -->
+                    <div class="color-select">
+                        <p>Color</p>
+                        <label for="red">
+                            <input type="radio" name="color" id="red">
+                            <span class="color-1"></span>
+                        </label>
+                        <label for="green">
+                            <input type="radio" name="color" id="green">
+                            <span class="color-2"></span>
+                        </label>
+                        <label for="blue">
+                            <input type="radio" name="color" id="blue">
+                            <span class="color-3"></span>
+                        </label>
+                        <label for="pink">
+                            <input type="radio" name="color" id="pink">
+                            <span class="color-4"></span>
+                        </label>
+                    </div>
+
+                    <!-- Quantity Selection -->
+                    <div class="quantity-select">
+                        <p>Quantity</p>
+                        <input type="number" value="1">
+                    </div>
+
+                    <!-- Buy Now Button -->
+                    <button>Buy Now</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript Section for Image Switch -->
+    <script>
+        // Select product image and control buttons
+        let productImg = document.getElementById("productImg");
+        let btn = document.getElementsByClassName("btn");
+
+        // Image Change on First Button Click
+        btn[0].onclick = function() {
+            productImg.src = "images/image1.png";
+            updateActiveButton(this);
+        }
+
+        btn[1].onclick = function() {
+            productImg.src = "images/image2.png";
+            updateActiveButton(this);
+        }
+
+        btn[2].onclick = function() {
+            productImg.src = "images/image3.png";
+            updateActiveButton(this);
+        }
+
+        // Function to Update Active Button
+        function updateActiveButton(activeBtn) {
+            for (let bt of btn) {
+                bt.classList.remove("active");
+            }
+            activeBtn.classList.add("active");
+        }
+    </script>
+</body>
+</html>
