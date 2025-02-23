@@ -1,0 +1,119 @@
+/* Resetting default margin, padding, and box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/* Ensure full width and height of the HTML and body */
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+/* Main game background styling */
+.main {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(174, 211, 174);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Panel styling for the game content */
+.pannel {
+    height: 80%;
+    width: 80%;
+    border-radius: 15px;
+    overflow: hidden; /* Prevent content overflow */
+}
+
+/* Top panel to show game information */
+.ptop {
+    height: 80px;
+    width: 100%;
+    background-color: rgb(30, 104, 30);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 10px;
+    gap: 10px;
+}
+
+/* Styling for each game stat (Hit, Timer, Score) */
+.enum {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0 10px;
+}
+
+/* Box design for hit number, timer, and score */
+.box {
+    width: 40px;
+    height: 30px;
+    padding: 5px;
+    background: #fff;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+}
+
+/* Headings inside the top panel */
+h2 {
+    color: white;
+}
+
+/* Bottom panel where bubbles will appear */
+.pbottam {
+    display: flex;
+    width: 100%;
+    height: calc(100% - 80px);
+    background-color: black;
+    padding: 10px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+/* Bubble design */
+.bubble {
+    height: 60px;
+    width: 60px;
+    background-color: rgb(179, 79, 86);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    cursor: pointer;
+}
+
+/* Game over message styling */
+#gameOver {
+    text-align: center;
+    color: white;
+}
+
+/* Restart button styling */
+#restartBtn {
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: #ff5722; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Hover effect for restart button */
+#restartBtn:hover {
+    background-color: #e64a19;
+}
